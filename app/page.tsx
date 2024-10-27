@@ -5,9 +5,9 @@ export default function Home() {
 
       <div className="space-y-4">
         <p className="text-balance">
-          Hey, I'm a Full-Stack Developer with 9 years of experience. I build
-          high quality web apps with a focus on performance, user experience and
-          scalability.
+          Hey, I&apos;m a Full-Stack Developer with 9 years of experience. I
+          build high quality web apps with a focus on performance, user
+          experience and scalability.
         </p>
         <p className="text-balance">
           I can help you with developing Web Apps, SaaS, MVPs and more.
