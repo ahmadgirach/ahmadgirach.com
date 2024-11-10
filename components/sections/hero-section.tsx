@@ -1,11 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 import Avatar from "@/public/avatar.png";
 
@@ -37,8 +36,8 @@ export function HeroSection() {
             Experiences
           </h1>
           <p className="mb-8 text-lg text-muted-foreground">
-            Hi, I'm Ahmad Girach. I craft beautiful web experiences with modern
-            technologies and thoughtful design.
+            Hi, I&apos;m Ahmad Girach. I craft beautiful web experiences with
+            modern technologies and thoughtful design.
           </p>
           <div className="flex items-center  gap-4">
             <Button size="lg" asChild>

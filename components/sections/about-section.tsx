@@ -16,7 +16,7 @@ import {
   TbBrandMongodb,
   TbBrandTailwind,
 } from "react-icons/tb";
-import { SiExpress, SiPostgresql, SiSabanci, SiShadcnui } from "react-icons/si";
+import { SiExpress, SiPostgresql, SiShadcnui } from "react-icons/si";
 
 const skills = [
   {

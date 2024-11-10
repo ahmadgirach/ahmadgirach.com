@@ -36,7 +36,7 @@ export function Navigation() {
           href="/"
           className="text-2xl font-semibold tracking-tight hover:opacity-80"
         >
-          Ahmad Girach
+          Ahmad Girach.
         </Link>
         <div className="flex items-center gap-6">
           {/* <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
