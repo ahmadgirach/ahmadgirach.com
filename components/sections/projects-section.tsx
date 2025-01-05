@@ -31,18 +31,18 @@ const projects = [
     description:
       "A platform where you can see the journey of some of the wealthiest individuals going from zero to million.",
     image: "/mss.png",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Blog", "MDX"],
     github: "https://github.com",
     demo: "https://www.millionairesuccessstories.com/",
   },
   {
-    title: "Platforms Directory",
+    title: "Platform Scout",
     description:
       "A web app to showcase various platfroms where users can submit their product and drive traffic.",
-    image: "/platforms-dir.png",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "MongoDB"],
+    image: "/platform-scout.png",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
     github: "https://github.com",
-    demo: "https://platforms-dir.vercel.app",
+    demo: "https://platformscout.com",
   },
 ];
 

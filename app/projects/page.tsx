@@ -6,8 +6,8 @@ export default function ProjectsPage() {
       description: "A file manager app. Create folders, upload files and more.",
     },
     {
-      name: "Platforms Dir",
-      link: "https://platforms-dir.vercel.app",
+      name: "Platform Scout",
+      link: "https://platformscout.com",
       description:
         "A Diectory to showcase all the platforms where users can submit and promote their projects.",
     },
