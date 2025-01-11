@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
 
 import { Card } from "@/components/ui/card";
@@ -8,43 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 import { motion } from "framer-motion";
-
-const projects = [
-  {
-    title: "MiniDrive",
-    description:
-      "A File Manager app that allow users to create folders, upload files and more..",
-    image: "/minidrive.png",
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "Shadcn UI",
-      "Cloudinary",
-      "MongoDB",
-    ],
-    github: "https://github.com",
-    demo: "https://minidrive.vercel.app/",
-  },
-  {
-    title: "Millionaire Success Stories",
-    description:
-      "A platform where you can see the journey of some of the wealthiest individuals going from zero to million.",
-    image: "/mss.png",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Blog", "MDX"],
-    github: "https://github.com",
-    demo: "https://www.millionairesuccessstories.com/",
-  },
-  {
-    title: "Platform Scout",
-    description:
-      "A web app to showcase various platfroms where users can submit their product and drive traffic.",
-    image: "/platform-scout.png",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
-    github: "https://github.com",
-    demo: "https://platformscout.com",
-  },
-];
+import { Projects } from "@/lib/data";
 
 const container = {
   hidden: { opacity: 0 },
@@ -64,7 +27,7 @@ const item = {
 export function ProjectsSection() {
   return (
     <section id="projects" className="py-24">
-      <div className="container px-4">
+      <div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -86,7 +49,7 @@ export function ProjectsSection() {
           viewport={{ once: true }}
           className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3"
         >
-          {projects.map((project) => (
+          {Projects.map((project) => (
             <motion.div key={project.title} variants={item}>
               <Card className="group overflow-hidden border-2 transition-colors hover:border-primary/50">
                 <div className="relative h-48 w-full">
@@ -115,23 +78,13 @@ export function ProjectsSection() {
                   </div>
                   <div className="mt-6 flex gap-4">
                     <Button className="group rounded-full w-full" asChild>
-                      <Link href={project.demo} target="_blank">
+                      <a href={project.url} target="_blank">
                         Visit{" "}
                         <span className="transition-all group-hover:mr-2">
                           &rarr;
                         </span>
-                      </Link>
+                      </a>
                     </Button>
-                    {/* <Button
-                      variant="outline"
-                      className="group/btn rounded-full"
-                      asChild
-                    >
-                      <Link href={project.github} target="_blank">
-                        <Github className="mr-2 h-4 w-4 transition-transform group-hover/btn:rotate-12" />
-                        Source
-                      </Link>
-                    </Button> */}
                   </div>
                 </div>
               </Card>

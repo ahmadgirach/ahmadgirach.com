@@ -23,25 +23,25 @@ const skills = [
     category: "Frontend",
     icon: Layout,
     items: [
-      { name: "Angular", icon: <TbBrandAngular className="size-10" /> },
-      { name: "React", icon: <TbBrandReact className="size-10" /> },
-      { name: "Next.js", icon: <TbBrandNextjs className="size-10" /> },
-      { name: "JavaScript", icon: <TbBrandJavascript className="size-10" /> },
-      { name: "TypeScript", icon: <TbBrandTypescript className="size-10" /> },
-      { name: "Tailwind CSS", icon: <TbBrandTailwind className="size-10" /> },
-      { name: "Shadcn UI", icon: <SiShadcnui className="size-10" /> },
+      { name: "Angular", icon: TbBrandAngular },
+      { name: "React", icon: TbBrandReact },
+      { name: "Next.js", icon: TbBrandNextjs },
+      { name: "JavaScript", icon: TbBrandJavascript },
+      { name: "TypeScript", icon: TbBrandTypescript },
+      { name: "Tailwind CSS", icon: TbBrandTailwind },
+      { name: "Shadcn UI", icon: SiShadcnui },
     ],
   },
   {
     category: "Backend",
     icon: Server,
     items: [
-      { name: "Python", icon: <TbBrandPython className="size-10" /> },
-      { name: "Django", icon: <TbBrandDjango className="size-10" /> },
-      { name: "Node.js", icon: <TbBrandNodejs className="size-10" /> },
-      { name: "Express", icon: <SiExpress className="size-10" /> },
-      { name: "PostgreSQL", icon: <SiPostgresql className="size-10" /> },
-      { name: "MongoDB", icon: <TbBrandMongodb className="size-10" /> },
+      { name: "Python", icon: TbBrandPython },
+      { name: "Django", icon: TbBrandDjango },
+      { name: "Node.js", icon: TbBrandNodejs },
+      { name: "Express", icon: SiExpress },
+      { name: "PostgreSQL", icon: SiPostgresql },
+      { name: "MongoDB", icon: TbBrandMongodb },
     ],
   },
 ];
@@ -106,7 +106,7 @@ export function AboutSection() {
                       className="flex flex-col items-center gap-2 min-w-[8rem] md:min-w-[6rem]"
                       key={item.name}
                     >
-                      {item.icon}
+                      <item.icon className="size-10" />
                       <Badge variant="secondary" className="rounded-full px-3">
                         {item.name}
                       </Badge>

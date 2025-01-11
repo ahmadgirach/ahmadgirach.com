@@ -53,41 +53,6 @@ export function HeroSection() {
               <a href="#projects">View My Work</a>
             </Button>
           </div>
-          {/* <div className="mt-8 flex gap-4">
-            <Button
-              variant="ghost"
-              size="icon"
-              className="rounded-full"
-              asChild
-            >
-              <Link href="https://github.com" target="_blank">
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </Link>
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="rounded-full"
-              asChild
-            >
-              <Link href="https://linkedin.com" target="_blank">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-            </Button>
-            <Button
-              variant="ghost"
-              size="icon"
-              className="rounded-full"
-              asChild
-            >
-              <Link href="mailto:your.email@example.com">
-                <Mail className="h-5 w-5" />
-                <span className="sr-only">Email</span>
-              </Link>
-            </Button>
-          </div> */}
         </motion.div>
 
         <motion.div
