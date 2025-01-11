@@ -27,6 +27,8 @@ cd [ahmadgirach.com]
 ```bash
 npm install
 # or
+pnpm install
+# or
 yarn install
 ```
 
@@ -35,6 +37,8 @@ yarn install
 ### Development Mode
 ```bash
 npm run dev
+# or
+pnpm dev
 # or
 yarn dev
 ```
