@@ -49,7 +49,12 @@ export function HeroSection() {
                 Book a FREE 15 min call &rarr;
               </a>
             </Button>
-            <Button size="lg" variant="secondary" asChild className="w-full">
+            <Button
+              size="lg"
+              className="w-full border-2"
+              variant={"secondary"}
+              asChild
+            >
               <a href="#projects">View My Work</a>
             </Button>
           </div>
