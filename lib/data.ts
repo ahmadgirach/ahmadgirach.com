@@ -17,6 +17,14 @@ export const Projects: ProjectType[] = [
     url: "https://minidrive.vercel.app/",
   },
   {
+    title: "Landing Page Inspirations",
+    description:
+      "A platform to curate & showcase the best SaaS, startup, and brand landing pages in one place.",
+    image: "/lpi.png",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
+    url: "https://landingpageinspirations.com/",
+  },
+  {
     title: "Millionaire Success Stories",
     description:
       "A platform where you can see the journey of some of the wealthiest individuals going from zero to million.",
