@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
 
 import Avatar from "@/public/avatar.png";
 
@@ -39,19 +39,20 @@ export function HeroSection() {
             Hi, I&apos;m Ahmad Girach. I craft beautiful web experiences with
             modern technologies and thoughtful design.
           </p>
-          <div className="flex items-center  gap-4">
-            <Button size="lg" asChild>
+          <div className="flex items-center gap-4">
+            <Button size="lg" className="w-auto lg:w-full group">
               <a
                 href="https://cal.com/ahmadgirach/15min"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Book a FREE 15 min call &rarr;
+                Let's work together
               </a>
+              <ArrowUpRight className="size-4 transition group-hover:rotate-45" />
             </Button>
             <Button
               size="lg"
-              className="w-full border-2"
+              className="border-2 w-auto lg:w-full"
               variant={"secondary"}
               asChild
             >

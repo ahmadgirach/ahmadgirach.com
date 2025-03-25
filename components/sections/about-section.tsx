@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+
 import { Layout, Server } from "lucide-react";
+
 import {
   TbBrandNextjs,
   TbBrandAngular,
@@ -17,6 +17,9 @@ import {
   TbBrandTailwind,
 } from "react-icons/tb";
 import { SiExpress, SiPostgresql, SiShadcnui } from "react-icons/si";
+
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 
 const skills = [
   {
@@ -65,7 +68,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-muted/40 py-24 dark:bg-muted/10"
+      className="relative overflow-hidden bg-muted/40 py-12 md:py-24 dark:bg-muted/10"
     >
       <div className="container px-4">
         <motion.div
@@ -91,16 +94,16 @@ export function AboutSection() {
         >
           {skills.map((skill) => (
             <motion.div key={skill.category} variants={item}>
-              <Card className="relative overflow-hidden border-2 p-6 transition-colors hover:border-primary/50 space-y-4">
-                <div className="flex items-center w-fit gap-2 rounded-lg bg-primary/10 px-4 py-3">
+              <Card className="overflow-hidden border-2 p-6 transition-colors hover:border-primary/50 space-y-4">
+                <div className="flex items-center gap-2 rounded-lg bg-primary/10 px-4 py-3 justify-center md:justify-start">
                   <skill.icon className="size-5 text-primary" />
                   <h3 className="text-lg font-semibold">{skill.category}</h3>
                 </div>
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground text-center md:text-left">
                   Technologies I use for {skill.category.toLowerCase()}{" "}
                   development.
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="grid grid-cols-2 gap-4 place-items-center sm:flex sm:flex-wrap sm:items-center sm:gap-2">
                   {skill.items.map((item) => (
                     <div
                       className="flex flex-col items-center gap-2 min-w-[8rem] md:min-w-[6rem]"

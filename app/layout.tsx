@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter_Tight } from "next/font/google";
 
 import { Analytics } from "@vercel/analytics/react";
 
@@ -9,9 +9,8 @@ import { Navigation } from "@/components/navigation";
 
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  weight: "100 900",
+const inter = Inter_Tight({
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${geistSans.className} antialiased container max-w-7xl mx-auto my-20`}
+        className={`${inter.className} antialiased container max-w-7xl mx-auto my-20`}
       >
         <ThemeProvider
           attribute="class"

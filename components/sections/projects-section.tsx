@@ -2,11 +2,13 @@
 
 import Image from "next/image";
 
+import { ArrowUpRight } from "lucide-react";
+import { motion } from "framer-motion";
+
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
-import { motion } from "framer-motion";
 import { Projects } from "@/lib/data";
 
 const container = {
@@ -26,7 +28,7 @@ const item = {
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-24">
+    <section id="projects" className="py-12 md:py-24">
       <div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -47,12 +49,12 @@ export function ProjectsSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3"
+          className="mt-16 grid gap-12 md:grid-cols-2 lg:grid-cols-3"
         >
           {Projects.map((project) => (
             <motion.div key={project.title} variants={item}>
               <Card className="group overflow-hidden border-2 transition-colors hover:border-primary/50">
-                <div className="relative h-48 w-full">
+                <div className="relative h-40 md:h-48 w-full">
                   <Image
                     src={project.image}
                     alt={project.title}
@@ -62,7 +64,7 @@ export function ProjectsSection() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-2xl font-bold">{project.title}</h3>
-                  <p className="mt-2 text-muted-foreground min-h-20">
+                  <p className="mt-2 text-muted-foreground min-h-0 md:min-h-20">
                     {project.description}
                   </p>
                   <div className="mt-4 flex flex-wrap gap-2">
@@ -80,8 +82,8 @@ export function ProjectsSection() {
                     <Button className="group rounded-full w-full" asChild>
                       <a href={project.url} target="_blank">
                         Visit{" "}
-                        <span className="transition-all group-hover:mr-2">
-                          &rarr;
+                        <span>
+                          <ArrowUpRight className="size-4 transition group-hover:rotate-45" />
                         </span>
                       </a>
                     </Button>
