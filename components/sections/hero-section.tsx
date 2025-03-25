@@ -39,8 +39,8 @@ export function HeroSection() {
             Hi, I&apos;m Ahmad Girach. I craft beautiful web experiences with
             modern technologies and thoughtful design.
           </p>
-          <div className="flex items-center gap-4">
-            <Button size="lg" className="w-auto lg:w-full group">
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <Button size="lg" className="w-full group">
               <a
                 href="https://cal.com/ahmadgirach/15min"
                 target="_blank"
@@ -52,7 +52,7 @@ export function HeroSection() {
             </Button>
             <Button
               size="lg"
-              className="border-2 w-auto lg:w-full"
+              className="border-2 w-full"
               variant={"secondary"}
               asChild
             >
