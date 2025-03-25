@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 import { motion } from "framer-motion";
-import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowDown, ArrowUpRight } from "lucide-react";
 
 import Avatar from "@/public/avatar.png";
 
@@ -46,7 +46,7 @@ export function HeroSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Let's work together
+                Let&apos;s work together
               </a>
               <ArrowUpRight className="size-4 transition group-hover:rotate-45" />
             </Button>
