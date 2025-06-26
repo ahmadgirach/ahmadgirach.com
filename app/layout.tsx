@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter_Tight } from "next/font/google";
+import { Hind } from "next/font/google";
 
 import { Analytics } from "@vercel/analytics/react";
 
@@ -9,8 +9,9 @@ import { Navigation } from "@/components/navigation";
 
 import "./globals.css";
 
-const inter = Inter_Tight({
+const hind = Hind({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${inter.className} antialiased container max-w-7xl mx-auto my-20`}
+        className={`${hind.className} antialiased container max-w-7xl mx-auto my-20`}
       >
         <ThemeProvider
           attribute="class"

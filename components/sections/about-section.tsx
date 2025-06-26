@@ -2,51 +2,51 @@
 
 import { motion } from "framer-motion";
 
-import { Layout, Server } from "lucide-react";
-
-import {
-  TbBrandNextjs,
-  TbBrandAngular,
-  TbBrandReact,
-  TbBrandPython,
-  TbBrandJavascript,
-  TbBrandTypescript,
-  TbBrandDjango,
-  TbBrandNodejs,
-  TbBrandMongodb,
-  TbBrandTailwind,
-} from "react-icons/tb";
-import { SiExpress, SiPostgresql, SiShadcnui } from "react-icons/si";
-
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import {
+  AngularIcon,
+  AWSIcon,
+  DjangoIcon,
+  DockerIcon,
+  ExpressIcon,
+  FastAPIIcon,
+  FlaskIcon,
+  GitHubIcon,
+  JavaScriptIcon,
+  JiraIcon,
+  MongoDBIcon,
+  NextjsIcon,
+  NodejsIcon,
+  PostgresIcon,
+  PythonIcon,
+  ReactIcon,
+  TypeScriptIcon,
+  VercelIcon,
+  TailwindCSSIcon,
+  SupabaseIcon,
+} from "../icons";
 
 const skills = [
-  {
-    category: "Frontend",
-    icon: Layout,
-    items: [
-      { name: "Angular", icon: TbBrandAngular },
-      { name: "React", icon: TbBrandReact },
-      { name: "Next.js", icon: TbBrandNextjs },
-      { name: "JavaScript", icon: TbBrandJavascript },
-      { name: "TypeScript", icon: TbBrandTypescript },
-      { name: "Tailwind CSS", icon: TbBrandTailwind },
-      { name: "Shadcn UI", icon: SiShadcnui },
-    ],
-  },
-  {
-    category: "Backend",
-    icon: Server,
-    items: [
-      { name: "Python", icon: TbBrandPython },
-      { name: "Django", icon: TbBrandDjango },
-      { name: "Node.js", icon: TbBrandNodejs },
-      { name: "Express", icon: SiExpress },
-      { name: "PostgreSQL", icon: SiPostgresql },
-      { name: "MongoDB", icon: TbBrandMongodb },
-    ],
-  },
+  { name: "Python", icon: PythonIcon },
+  { name: "JavaScript", icon: JavaScriptIcon },
+  { name: "TypeScript", icon: TypeScriptIcon },
+  { name: "Django", icon: DjangoIcon },
+  { name: "Flask", icon: FlaskIcon },
+  { name: "FastAPI", icon: FastAPIIcon },
+  { name: "Node.js", icon: NodejsIcon },
+  { name: "Express", icon: ExpressIcon },
+  { name: "Angular", icon: AngularIcon },
+  { name: "React", icon: ReactIcon },
+  { name: "Next.js", icon: NextjsIcon },
+  { name: "Tailwind CSS", icon: TailwindCSSIcon },
+  { name: "PostgreSQL", icon: PostgresIcon },
+  { name: "MongoDB", icon: MongoDBIcon },
+  { name: "Docker", icon: DockerIcon },
+  { name: "AWS", icon: AWSIcon },
+  { name: "Vercel", icon: VercelIcon },
+  { name: "GitHub", icon: GitHubIcon },
+  { name: "Jira", icon: JiraIcon },
+  { name: "Supabase", icon: SupabaseIcon },
 ];
 
 const container = {
@@ -68,9 +68,9 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-muted/40 py-12 md:py-24 dark:bg-muted/10"
+      className="relative overflow-hidden bg-gray-200 dark:bg-gray-700 py-12 md:py-24"
     >
-      <div className="container px-4">
+      <div className="container mx-auto px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -78,11 +78,9 @@ export function AboutSection() {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="text-3xl font-bold sm:text-4xl">About Me</h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            I specialize in building modern web applications with a focus on
-            performance, accessibility, and user experience.
-          </p>
+          <h2 className="text-3xl font-bold sm:text-4xl">
+            Tech Stack / Tools I work with
+          </h2>
         </motion.div>
 
         <motion.div
@@ -90,35 +88,21 @@ export function AboutSection() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true }}
-          className="mt-16 grid gap-8 md:grid-cols-2"
+          className="mt-16"
         >
-          {skills.map((skill) => (
-            <motion.div key={skill.category} variants={item}>
-              <Card className="overflow-hidden border-2 p-6 transition-colors hover:border-primary/50 space-y-4">
-                <div className="flex items-center gap-2 rounded-lg bg-primary/10 px-4 py-3 justify-center md:justify-start">
-                  <skill.icon className="size-5 text-primary" />
-                  <h3 className="text-lg font-semibold">{skill.category}</h3>
-                </div>
-                <p className="text-muted-foreground text-center md:text-left">
-                  Technologies I use for {skill.category.toLowerCase()}{" "}
-                  development.
-                </p>
-                <div className="grid grid-cols-2 gap-4 place-items-center sm:flex sm:flex-wrap sm:items-center sm:gap-2">
-                  {skill.items.map((item) => (
-                    <div
-                      className="flex flex-col items-center gap-2 min-w-[8rem] md:min-w-[6rem]"
-                      key={item.name}
-                    >
-                      <item.icon className="size-10" />
-                      <Badge variant="secondary" className="rounded-full px-3">
-                        {item.name}
-                      </Badge>
-                    </div>
-                  ))}
-                </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-5">
+            {skills.map((skill, index) => (
+              <Card
+                key={index}
+                className="flex flex-col justify-center items-center aspect-square gap-2"
+              >
+                <skill.icon size={50} />
+                <span className="text-sm text-muted-foreground">
+                  {skill.name}
+                </span>
               </Card>
-            </motion.div>
-          ))}
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

@@ -25,22 +25,14 @@ cd [ahmadgirach.com]
 
 ### Install Dependencies
 ```bash
-npm install
-# or
-pnpm install
-# or
-yarn install
+bun install
 ```
 
 ## 🚀 Running the Application
 
 ### Development Mode
 ```bash
-npm run dev
-# or
-pnpm dev
-# or
-yarn dev
+bun dev
 ```
 ## 🤝 Contributing
 1. Fork the repository

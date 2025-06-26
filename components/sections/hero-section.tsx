@@ -36,8 +36,9 @@ export function HeroSection() {
             Experiences
           </h1>
           <p className="mb-8 text-lg text-muted-foreground">
-            Hi, I&apos;m Ahmad Girach. I craft beautiful web experiences with
-            modern technologies and thoughtful design.
+            Hi, I&apos;m Ahmad Girach. I specialize in building modern web
+            applications with a focus on performance, accessibility, and user
+            experience.
           </p>
           <div className="flex flex-col md:flex-row items-center gap-4">
             <Button size="lg" className="w-full group">
