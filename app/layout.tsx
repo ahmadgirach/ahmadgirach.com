@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${hind.className} antialiased container max-w-7xl mx-auto my-20`}
+        className={`${hind.className} antialiased my-20 container max-w-7xl mx-auto`}
       >
         <ThemeProvider
           attribute="class"

@@ -62,7 +62,7 @@ const container = {
 export function AboutSection() {
   return (
     <section
-      id="about"
+      id="skills"
       className="relative overflow-hidden bg-gray-200 dark:bg-gray-700 py-12 md:py-24"
     >
       <div className="container mx-auto px-8">

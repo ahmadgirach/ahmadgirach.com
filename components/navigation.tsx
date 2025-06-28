@@ -7,6 +7,17 @@ import { motion, useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
+type NavItem = {
+  label: string;
+  path: string;
+};
+
+const navItems: NavItem[] = [
+  { label: "Skills", path: "#skills" },
+  { label: "Projects", path: "#projects" },
+  { label: "Testimonials", path: "#testimonials" },
+];
+
 export function Navigation() {
   const { setTheme, theme } = useTheme();
   const { scrollY } = useScroll();
@@ -38,27 +49,20 @@ export function Navigation() {
         >
           Ahmad Girach.
         </Link>
+
         <div className="flex items-center gap-6">
-          {/* <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
-            <Link
-              href="/about"
-              className="hover:text-foreground/80 transition-colors"
-            >
-              About
-            </Link>
-            <Link
-              href="/projects"
-              className="hover:text-foreground/80 transition-colors"
-            >
-              Projects
-            </Link>
-            <Link
-              href="/contact"
-              className="hover:text-foreground/80 transition-colors"
-            >
-              Contact
-            </Link>
-          </nav> */}
+          <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+            {navItems.map((navItem) => (
+              <Link
+                key={navItem.path}
+                href={navItem.path}
+                className="hover:text-foreground/80 transition-colors"
+              >
+                {navItem.label}
+              </Link>
+            ))}
+          </nav>
+
           <Button
             variant="ghost"
             size="icon"

@@ -2,7 +2,7 @@ import SocialLinks from "./social-links";
 
 const Footer = () => {
   return (
-    <footer className="text-sm py-2">
+    <footer className="text-sm py-2 my-10">
       <div className="flex justify-between items-center gap-2 md:gap-0">
         <div>
           <span>&copy; {new Date().getFullYear()}. Ahmad Girach.</span>
