@@ -89,7 +89,7 @@ export function AboutSection() {
             {skills.map((skill, index) => (
               <Card
                 key={index}
-                className="flex flex-col justify-center items-center aspect-square gap-2"
+                className="flex flex-col justify-center items-center aspect-square gap-2 transition-colors hover:bg-primary/10"
               >
                 <skill.icon size={50} />
                 <span className="text-sm text-muted-foreground">
