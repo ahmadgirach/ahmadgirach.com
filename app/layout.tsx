@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Sans } from "next/font/google";
+import { Public_Sans } from "next/font/google";
 
 import { Analytics } from "@vercel/analytics/react";
 
@@ -9,9 +9,8 @@ import { Navigation } from "@/components/navigation";
 
 import "./globals.css";
 
-const ibmPlexSans = IBM_Plex_Sans({
+const publicSans = Public_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -27,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${ibmPlexSans.className} antialiased my-20 container max-w-7xl mx-auto`}
+        className={`${publicSans.className} antialiased my-20 container max-w-7xl mx-auto`}
       >
         <ThemeProvider
           attribute="class"
