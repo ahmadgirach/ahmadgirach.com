@@ -38,6 +38,6 @@ export const Projects: ProjectType[] = [
       "A web app to showcase various platfroms where users can submit their product and drive traffic.",
     image: "/platform-scout.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
-    url: "https://platformscout.com",
+    url: "https://platform-scout.vercel.app/",
   },
 ];
