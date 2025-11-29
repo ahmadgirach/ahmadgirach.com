@@ -30,7 +30,7 @@ export const Projects: ProjectType[] = [
       "A platform where you can see the journey of some of the wealthiest individuals going from zero to million.",
     image: "/mss.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Blog", "MDX"],
-    url: "https://www.millionairesuccessstories.com/",
+    url: "https://millionaire-success-stories.vercel.app",
   },
   {
     title: "Platform Scout",
