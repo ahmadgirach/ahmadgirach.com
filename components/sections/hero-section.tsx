@@ -11,7 +11,7 @@ import Avatar from "@/public/avatar.png";
 export function HeroSection() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#00000026_1px,transparent_1px),linear-gradient(to_bottom,#00000026_1px,transparent_1px)] dark:bg-[linear-gradient(to_right,#ffffff1a_1px,transparent_1px),linear-gradient(to_bottom,#ffffff1a_1px,transparent_1px)] bg-size-[4rem_4rem] mask-[radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_110%)]" />
 
       <div className="container relative grid gap-8 px-4 md:grid-cols-2 md:gap-16">
         <motion.div
@@ -30,7 +30,7 @@ export function HeroSection() {
           </motion.div>
           <h1 className="mb-4 text-5xl font-bold tracking-tight sm:text-7xl">
             Creating{" "}
-            <span className="bg-gradient-to-r from-primary to-primary/50 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-primary to-primary/50 bg-clip-text text-transparent">
               Digital
             </span>{" "}
             Experiences
@@ -68,7 +68,7 @@ export function HeroSection() {
           transition={{ delay: 0.3 }}
           className="relative hidden aspect-square md:block"
         >
-          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary/20 to-primary/0" />
+          <div className="absolute inset-0 rounded-full bg-linear-to-r from-primary/20 to-primary/0" />
           <Image
             src={Avatar}
             alt="Profile Pic"

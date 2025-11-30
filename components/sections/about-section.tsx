@@ -21,7 +21,6 @@ import {
   PythonIcon,
   ReactIcon,
   TypeScriptIcon,
-  VercelIcon,
   TailwindCSSIcon,
   SupabaseIcon,
 } from "../icons";
@@ -43,7 +42,6 @@ const skills = [
   { name: "MongoDB", icon: MongoDBIcon },
   { name: "Docker", icon: DockerIcon },
   { name: "AWS", icon: AWSIcon },
-  { name: "Vercel", icon: VercelIcon },
   { name: "GitHub", icon: GitHubIcon },
   { name: "Jira", icon: JiraIcon },
   { name: "Supabase", icon: SupabaseIcon },
@@ -61,10 +59,7 @@ const container = {
 
 export function AboutSection() {
   return (
-    <section
-      id="skills"
-      className="relative overflow-hidden bg-gray-200 dark:bg-gray-700 py-12 md:py-24"
-    >
+    <section id="skills" className="relative overflow-hidden py-12 md:py-24">
       <div className="container mx-auto px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
