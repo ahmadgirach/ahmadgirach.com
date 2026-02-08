@@ -61,7 +61,7 @@ export function AboutSection() {
   return (
     <section
       id="skills"
-      className="relative overflow-hidden py-12 md:py-24 dark:bg-primary/20 rounded-md"
+      className="relative overflow-hidden py-12 md:py-24 dark:bg-primary/10 rounded-md"
     >
       <div className="container mx-auto px-8">
         <motion.div
@@ -87,7 +87,7 @@ export function AboutSection() {
             {skills.map((skill, index) => (
               <Card
                 key={index}
-                className="flex flex-col justify-center items-center aspect-square gap-2 transition-colors hover:bg-primary/10"
+                className="flex flex-col justify-center items-center aspect-square gap-2 transition-colors hover:bg-secondary"
               >
                 <skill.icon size={50} />
                 <span className="text-sm text-muted-foreground">

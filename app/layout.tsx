@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Public_Sans } from "next/font/google";
+import { Geist } from "next/font/google";
 
 import { Analytics } from "@vercel/analytics/react";
 
@@ -9,13 +9,13 @@ import { Navigation } from "@/components/navigation";
 
 import "./globals.css";
 
-const publicSans = Public_Sans({
+const geist = Geist({
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   title: "Ahmad Girach | Full-Stack Developer",
-  description: "Full-Stack Developer with 9 years of experience.",
+  description: "Full-Stack Developer with a decade of technical experience.",
 };
 
 export default function RootLayout({
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <body
-        className={`${publicSans.className} antialiased my-20 container max-w-7xl mx-auto`}
+        className={`${geist.className} antialiased my-20 container max-w-7xl mx-auto`}
       >
         <ThemeProvider
           attribute="class"

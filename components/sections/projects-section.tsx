@@ -37,11 +37,7 @@ export function ProjectsSection() {
           transition={{ duration: 0.5 }}
           className="mx-auto max-w-2xl text-center"
         >
-          <h2 className="text-3xl font-bold sm:text-4xl">Featured Projects</h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Here are some of my recent projects that showcase my skills and
-            expertise in web development.
-          </p>
+          <h2 className="text-3xl font-bold sm:text-4xl">Some of the Projects I've built</h2>
         </motion.div>
 
         <motion.div

@@ -18,7 +18,7 @@ const testimonials = [
     name: "Nikunj G.",
     role: "Former Project Manager",
     content:
-      "In my 7+ years of experience, I've never met a professional with such strong work ethics as Ahmed.",
+      "In my 7+ years of experience, I've never met a professional with such strong work ethics as Ahmad.",
   },
   {
     name: "Thomas K.",
@@ -160,11 +160,10 @@ export function TestimonialsSection() {
                     setDirection(index > currentIndex ? 1 : -1);
                     setCurrentIndex(index);
                   }}
-                  className={`size-2 rounded-full transition-colors ${
-                    index === currentIndex
-                      ? "bg-primary"
-                      : "bg-muted-foreground/30"
-                  }`}
+                  className={`size-2 rounded-full transition-colors ${index === currentIndex
+                    ? "bg-primary"
+                    : "bg-muted-foreground/30"
+                    }`}
                 />
               ))}
             </div>

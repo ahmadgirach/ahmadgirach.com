@@ -22,22 +22,22 @@ export const Projects: ProjectType[] = [
       "A platform to curate & showcase the best SaaS, startup, and brand landing pages in one place.",
     image: "/lpi.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
-    url: "https://landingpageinspirations.com/",
+    url: "https://landing-page-inspirations.pages.dev/",
   },
-  {
-    title: "Millionaire Success Stories",
-    description:
-      "A platform where you can see the journey of some of the wealthiest individuals going from zero to million.",
-    image: "/mss.png",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Blog", "MDX"],
-    url: "https://millionaire-success-stories.vercel.app",
-  },
+  // {
+  //   title: "Millionaire Success Stories",
+  //   description:
+  //     "A platform where you can see the journey of some of the wealthiest individuals going from zero to million.",
+  //   image: "/mss.png",
+  //   tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Blog", "MDX"],
+  //   url: "https://millionaire-success-stories.vercel.app",
+  // },
   {
     title: "Platform Scout",
     description:
       "A web app to showcase various platfroms where users can submit their product and drive traffic.",
     image: "/platform-scout.png",
     tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI"],
-    url: "https://platform-scout.vercel.app/",
+    url: "https://platform-scout.pages.dev/",
   },
 ];
